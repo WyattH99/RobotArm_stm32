@@ -1,0 +1,10 @@
+17:16:32 **** Incremental Build of configuration Debug for project PotentiometerToServo ****
+make -j12 all 
+arm-none-eabi-size   PotentiometerToServo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13752	     20	   1820	  15592	   3ce8	PotentiometerToServo.elf
+Finished building: default.size.stdout
+ 
+
+17:16:32 Build Finished. 0 errors, 0 warnings. (took 581ms)
+
