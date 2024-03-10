@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "pca9685.h"
+#include "math.h"
 
 /* USER CODE END Includes */
 
@@ -36,6 +37,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+#define POT_COUNT		4
 #define SERVO_COUNT		4
 
 /* USER CODE END PD */
@@ -47,7 +49,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
-DMA_HandleTypeDef hdma_adc1;
 
 I2C_HandleTypeDef hi2c1;
 
@@ -55,18 +56,18 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 
-volatile uint16_t 	adcRawResultsDMA [4];
-const uint32_t 		adcChannelCount = sizeof(adcRawResultsDMA) / sizeof(adcRawResultsDMA[0]);
+volatile uint16_t 	adcRawResults [POT_COUNT];
+const uint32_t 		adcChannelCount = sizeof(adcRawResults) / sizeof(adcRawResults[0]);
 volatile uint8_t 	adcConversionComplete = 0; // flag used by callback
 
 uint8_t ActiveServo = 0;
+volatile float 	servoAngles [SERVO_COUNT];
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_I2C1_Init(void);
@@ -76,6 +77,11 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+uint32_t MAP(uint32_t au32_IN, uint32_t au32_INmin, uint32_t au32_INmax, uint32_t au32_OUTmin, uint32_t au32_OUTmax)
+{
+    return ((((au32_IN - au32_INmin)*(au32_OUTmax - au32_OUTmin))/(au32_INmax - au32_INmin)) + au32_OUTmin);
+}
 
 /* USER CODE END 0 */
 
@@ -107,7 +113,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_USART2_UART_Init();
   MX_ADC1_Init();
   MX_I2C1_Init();
@@ -122,7 +127,7 @@ int main(void)
   HAL_Delay(2000);
 
 
-//  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adcRawResultsDMA, 4);
+
 
 
   /* USER CODE END 2 */
@@ -131,21 +136,17 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//	  if(adcConversionComplete){
-//		  HAL_Delay(100);
-//		  adcConversionComplete = 0;
-//	  }
 
-	  for (uint8_t Angle = 0; Angle < 180; Angle++) {
-		  PCA9685_SetServoAngle(ActiveServo, Angle);
-		}
-	  HAL_Delay(500);
-	  for (uint16_t Angle = 180; Angle > 0; Angle--) {
-		  PCA9685_SetServoAngle(ActiveServo, Angle);
+	  for(uint8_t i=0; i<adcChannelCount; i++){
+		  HAL_ADC_Start(&hadc1);
+		  HAL_ADC_PollForConversion(&hadc1, 1);
+		  adcRawResults[i] = HAL_ADC_GetValue(&hadc1);
+
+		  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], 0, 4096, 0, 180);
+		  PCA9685_SetServoAngle(i, servoAngles[i]);
+
+
 	  }
-	  HAL_Delay(500);
-	  ActiveServo++;
-	  if (ActiveServo >= SERVO_COUNT) ActiveServo = 0;
 
 
 
@@ -227,8 +228,9 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
   hadc1.Init.ScanConvMode = ENABLE;
-  hadc1.Init.ContinuousConvMode = ENABLE;
-  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = ENABLE;
+  hadc1.Init.NbrOfDiscConversion = 1;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
@@ -350,22 +352,6 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
-  * Enable DMA controller clock
-  */
-static void MX_DMA_Init(void)
-{
-
-  /* DMA controller clock enable */
-  __HAL_RCC_DMA2_CLK_ENABLE();
-
-  /* DMA interrupt init */
-  /* DMA2_Stream0_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
-
-}
-
-/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -403,18 +389,6 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
-{
-  /* Prevent unused argument(s) compilation warning */
-  UNUSED(hadc);
-  /* NOTE : This function Should not be modified, when the callback is needed,
-            the HAL_ADC_ConvCpltCallback could be implemented in the user file
-   */
-
-  adcConversionComplete = 1;
-
-}
 
 /* USER CODE END 4 */
 
