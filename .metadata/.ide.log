@@ -6124,3 +6124,390 @@
 2024-03-09 17:15:13,131 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 850mS.
 2024-03-09 17:15:13,131 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
 2024-03-09 17:15:13,132 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-09 18:16:58,281 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,281 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,281 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,281 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,282 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,283 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,315 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,353 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,353 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,353 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,353 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,354 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,355 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:16:58,386 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,386 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,386 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:16:58,387 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,832 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,832 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,832 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,832 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,833 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,834 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,863 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,898 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,898 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,898 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,898 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,899 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,900 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 1 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 2 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 3 : true
+2024-03-09 18:17:01,929 [INFO] ADCParametersView:116 -                Rank 4 : true
+2024-03-09 18:18:12,295 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,295 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,328 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,328 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,328 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,328 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,362 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,362 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,362 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:18:12,362 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:19:44,425 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 337994336 Bytes (961544192)
+2024-03-09 18:19:44,490 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 359488096 Bytes (961544192)
+2024-03-09 18:19:44,759 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 403348112 Bytes (961544192)
+2024-03-09 18:19:44,885 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-03-09 18:19:44,886 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-09 18:19:44,886 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : hdmavalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:321 - 	 sub Args: 
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Instancevalue: DMA2_Stream0
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Instancevalue: DMA2_Stream0
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Initvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:321 - 	 sub Args: 
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : FIFOThresholdvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : FIFOThresholdvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : MemBurstvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : MemBurstvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : PeriphBurstvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : PeriphBurstvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Lockvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:329 - Argument : Lockvalue: null
+2024-03-09 18:19:44,893 [INFO] Argument:319 - Argument : Statevalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : Statevalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : Parentvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : Parentvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : XferM1CpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : XferM1CpltCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2024-03-09 18:19:44,894 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2024-03-09 18:19:44,895 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-09 18:19:44,895 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-09 18:19:45,009 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/license.tmp_save
+2024-03-09 18:19:45,072 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/license.tmp
+2024-03-09 18:19:45,079 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/gpio.tmp_save
+2024-03-09 18:19:45,119 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/gpio.tmp
+2024-03-09 18:19:45,177 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/dma.tmp_save
+2024-03-09 18:19:45,215 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/dma.tmp
+2024-03-09 18:19:45,216 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/dma_GV.tmp_save
+2024-03-09 18:19:45,250 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/dma_GV.tmp
+2024-03-09 18:19:45,254 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/stm32f4xx_it.c_save
+2024-03-09 18:19:45,348 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/stm32f4xx_it.c
+2024-03-09 18:19:45,349 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/stm32f4xx_it.h_save
+2024-03-09 18:19:45,385 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/stm32f4xx_it.h
+2024-03-09 18:19:45,387 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/stm32f4xx_hal_msp.c_save
+2024-03-09 18:19:45,453 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/stm32f4xx_hal_msp.c
+2024-03-09 18:19:45,454 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/system.tmp_save
+2024-03-09 18:19:45,492 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/MXTmpFiles/system.tmp
+2024-03-09 18:19:45,494 [INFO] CodeEngine:311 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/stm32f4xx_hal_conf.h_save
+2024-03-09 18:19:45,536 [INFO] CodeEngine:335 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/stm32f4xx_hal_conf.h
+2024-03-09 18:19:45,544 [WARN] IPConfigManager:2937 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2024-03-09 18:19:45,547 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/main.h_save
+2024-03-09 18:19:45,595 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Inc/main.h
+2024-03-09 18:19:45,596 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/main.c_save
+2024-03-09 18:19:45,657 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/PotentiometerToServo/Core/Src/main.c
+2024-03-09 18:19:46,051 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 41mS.
+2024-03-09 18:19:46,052 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-03-09 18:19:46,182 [INFO] ConfigFileManager:1457 - The Die is : DIE421
+2024-03-09 18:19:46,870 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 818mS.
+2024-03-09 18:19:46,870 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-09 18:19:46,871 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
