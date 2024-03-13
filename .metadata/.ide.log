@@ -505,3 +505,126 @@
 2024-03-13 10:19:12,979 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
 2024-03-13 10:19:12,980 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
 2024-03-13 10:19:12,980 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-13 17:49:19,074 [INFO] Gpio:273 - dependency for GPIO [ADC1, I2C1, RCC, SYS, USART2]
+2024-03-13 17:50:44,591 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 444354336 Bytes (643825664)
+2024-03-13 17:50:44,646 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 464799520 Bytes (643825664)
+2024-03-13 17:50:44,897 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 505431856 Bytes (643825664)
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-13 17:50:45,211 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-13 17:50:45,212 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-03-13 17:50:45,224 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-13 17:50:45,224 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-13 17:50:45,417 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp_save
+2024-03-13 17:50:45,651 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp
+2024-03-13 17:50:45,681 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp_save
+2024-03-13 17:50:45,770 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp
+2024-03-13 17:50:45,908 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c_save
+2024-03-13 17:50:45,984 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c
+2024-03-13 17:50:45,986 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h_save
+2024-03-13 17:50:46,034 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h
+2024-03-13 17:50:46,038 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c_save
+2024-03-13 17:50:46,153 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c
+2024-03-13 17:50:46,155 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp_save
+2024-03-13 17:50:46,206 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp
+2024-03-13 17:50:46,208 [INFO] CodeEngine:311 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h_save
+2024-03-13 17:50:46,261 [INFO] CodeEngine:335 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h
+2024-03-13 17:50:46,277 [WARN] IPConfigManager:2937 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2024-03-13 17:50:46,283 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h_save
+2024-03-13 17:50:46,341 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h
+2024-03-13 17:50:46,342 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c_save
+2024-03-13 17:50:46,443 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c
+2024-03-13 17:50:46,862 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 44mS.
+2024-03-13 17:50:46,866 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-03-13 17:50:47,111 [INFO] ConfigFileManager:1457 - The Die is : DIE421
+2024-03-13 17:50:47,118 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2024-03-13 17:50:47,123 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2024-03-13 17:50:47,125 [INFO] ApiDbMcu:507 - Load IP Config File for LIBJPEG
+2024-03-13 17:50:47,133 [INFO] ApiDbMcu:507 - Load IP Config File for MBEDTLS
+2024-03-13 17:50:47,142 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2024-03-13 17:50:47,146 [INFO] ApiDbMcu:507 - Load IP Config File for USB_HOST
+2024-03-13 17:50:47,760 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-03-13 17:50:48,182 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1315mS.
+2024-03-13 17:50:48,182 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 17:50:48,182 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 18:04:14,598 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 341158728 Bytes (856686592)
+2024-03-13 18:04:14,662 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 362130248 Bytes (856686592)
+2024-03-13 18:04:14,962 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 401976136 Bytes (856686592)
+2024-03-13 18:04:15,088 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-13 18:04:15,089 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-13 18:04:15,089 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-03-13 18:04:15,096 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-13 18:04:15,096 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-13 18:04:15,198 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp_save
+2024-03-13 18:04:15,310 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp
+2024-03-13 18:04:15,320 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp_save
+2024-03-13 18:04:15,378 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp
+2024-03-13 18:04:15,455 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c_save
+2024-03-13 18:04:15,641 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c
+2024-03-13 18:04:15,643 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h_save
+2024-03-13 18:04:15,684 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h
+2024-03-13 18:04:15,686 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c_save
+2024-03-13 18:04:15,756 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c
+2024-03-13 18:04:15,757 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp_save
+2024-03-13 18:04:15,794 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp
+2024-03-13 18:04:15,796 [INFO] CodeEngine:311 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h_save
+2024-03-13 18:04:15,842 [INFO] CodeEngine:335 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h
+2024-03-13 18:04:15,853 [WARN] IPConfigManager:2937 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2024-03-13 18:04:15,857 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h_save
+2024-03-13 18:04:15,913 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h
+2024-03-13 18:04:15,914 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c_save
+2024-03-13 18:04:16,000 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c
+2024-03-13 18:04:16,308 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 26mS.
+2024-03-13 18:04:16,310 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-03-13 18:04:16,465 [INFO] ConfigFileManager:1457 - The Die is : DIE421
+2024-03-13 18:04:17,225 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 914mS.
+2024-03-13 18:04:17,225 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 18:04:17,225 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 18:10:06,088 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 558998296 Bytes (901775360)
+2024-03-13 18:10:06,158 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 579447576 Bytes (901775360)
+2024-03-13 18:10:06,409 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 620342040 Bytes (901775360)
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-03-13 18:10:06,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-03-13 18:10:06,537 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2024-03-13 18:10:06,544 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-03-13 18:10:06,544 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-03-13 18:10:06,641 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp_save
+2024-03-13 18:10:06,688 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/license.tmp
+2024-03-13 18:10:06,702 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp_save
+2024-03-13 18:10:06,746 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/gpio.tmp
+2024-03-13 18:10:06,861 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c_save
+2024-03-13 18:10:06,906 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_it.c
+2024-03-13 18:10:06,907 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h_save
+2024-03-13 18:10:06,944 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_it.h
+2024-03-13 18:10:06,946 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c_save
+2024-03-13 18:10:07,005 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/stm32f4xx_hal_msp.c
+2024-03-13 18:10:07,006 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp_save
+2024-03-13 18:10:07,042 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/MXTmpFiles/system.tmp
+2024-03-13 18:10:07,044 [INFO] CodeEngine:311 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h_save
+2024-03-13 18:10:07,086 [INFO] CodeEngine:335 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/stm32f4xx_hal_conf.h
+2024-03-13 18:10:07,096 [WARN] IPConfigManager:2937 - Warning: the RefConfig PLL2P_FOR_MCO is not available in your config.xml file
+2024-03-13 18:10:07,100 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h_save
+2024-03-13 18:10:07,140 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Inc/main.h
+2024-03-13 18:10:07,141 [INFO] CodeEngine:255 - oldGeneratedFile, /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c_save
+2024-03-13 18:10:07,212 [INFO] CodeEngine:279 - Generated code: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Core/Src/main.c
+2024-03-13 18:10:07,518 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 20mS.
+2024-03-13 18:10:07,519 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-03-13 18:10:07,648 [INFO] ConfigFileManager:1457 - The Die is : DIE421
+2024-03-13 18:10:08,330 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 811mS.
+2024-03-13 18:10:08,331 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 18:10:08,331 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-03-13 18:46:18,599 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

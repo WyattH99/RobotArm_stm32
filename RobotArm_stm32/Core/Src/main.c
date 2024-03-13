@@ -225,7 +225,7 @@ int main(void)
   Gripper.ServoNum = 4;
   Gripper.ServoMin = 0;
   Gripper.ServoMax = 70;
-  Gripper.ServoHomeAngle = 0;
+  Gripper.ServoHomeAngle = Gripper.ServoMin;
 
 
 
@@ -247,18 +247,6 @@ int main(void)
   while (1)
   {
 
-
-//	  PCA9685_SetServoAngle(Wrist.ServoNum, (float)Wrist.ServoMin, 0);
-//
-//	  HAL_Delay(5000);
-//
-//
-//	  PCA9685_SetServoAngle(Wrist.ServoNum, (float)Wrist.ServoMax, 0);
-//
-//	  HAL_Delay(5000);
-
-
-
 	  for(uint8_t i=0; i<adcChannelCount; i++){
 		  HAL_ADC_Start(&hadc1);
 		  HAL_ADC_PollForConversion(&hadc1, 1);
@@ -275,10 +263,43 @@ int main(void)
 			  PCA9685_SetServoAngle(Base.ServoNum, servoAngles[i], 0);
 		  }
 
+		  if(i == Shoulder.ServoNum){
+			  if(adcRawResults[i] > Shoulder.PotMax){
+				  adcRawResults[i] = Shoulder.PotMax;
+			  }
+			  if(adcRawResults[i] < Shoulder.PotMin){
+				  adcRawResults[i] = Shoulder.PotMin;
+			  }
+			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Shoulder.PotMin, (uint32_t)Shoulder.PotMax, (uint32_t)Shoulder.ServoMin, (uint32_t)Shoulder.ServoMax);
+			  PCA9685_SetServoAngle(Shoulder.ServoNum, servoAngles[i], 0);
+		  }
+
+		  if(i == Elbow.ServoNum){
+			  if(adcRawResults[i] > Elbow.PotMax){
+				  adcRawResults[i] = Elbow.PotMax;
+			  }
+			  if(adcRawResults[i] < Elbow.PotMin){
+				  adcRawResults[i] = Elbow.PotMin;
+			  }
+			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Elbow.PotMin, (uint32_t)Elbow.PotMax, (uint32_t)Elbow.ServoMin, (uint32_t)Elbow.ServoMax);
+			  PCA9685_SetServoAngle(Elbow.ServoNum, servoAngles[i], 0);
+		  }
+
+		  if(i == Wrist.ServoNum){
+			  if(adcRawResults[i] > Wrist.PotMax){
+				  adcRawResults[i] = Wrist.PotMax;
+			  }
+			  if(adcRawResults[i] < Wrist.PotMin){
+				  adcRawResults[i] = Wrist.PotMin;
+			  }
+			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Wrist.PotMin, (uint32_t)Wrist.PotMax, (uint32_t)Wrist.ServoMin, (uint32_t)Wrist.ServoMax);
+			  PCA9685_SetServoAngle(Wrist.ServoNum, servoAngles[i], 0);
+		  }
+
 		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)){
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+			 PCA9685_SetServoAngle(Gripper.ServoNum, Gripper.ServoMin, 0);
 		  }else{
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+			 PCA9685_SetServoAngle(Gripper.ServoNum, Gripper.ServoMax, 0);
 		  }
 
 
@@ -522,7 +543,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : GripperButton_Pin */
   GPIO_InitStruct.Pin = GripperButton_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GripperButton_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
