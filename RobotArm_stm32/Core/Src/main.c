@@ -38,7 +38,7 @@
 /* USER CODE BEGIN PD */
 
 #define POT_COUNT		4
-#define SERVO_COUNT		4
+#define SERVO_COUNT		5
 
 /* USER CODE END PD */
 
@@ -119,12 +119,13 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
-
-  PCA9685_Init(&hi2c1);
-  PCA9685_SetServoAngle(0, 0);
-  PCA9685_SetServoAngle(1, 0);
-  PCA9685_SetServoAngle(2, 0);
-  PCA9685_SetServoAngle(3, 0);
+//
+//  PCA9685_Init(&hi2c1);
+//  PCA9685_SetServoAngle(0, 0);
+//  PCA9685_SetServoAngle(1, 0);
+//  PCA9685_SetServoAngle(2, 0);
+//  PCA9685_SetServoAngle(3, 0);
+//  PCA9685_SetServoAngle(4, 0);
 
   HAL_Delay(2000);
 
@@ -142,8 +143,14 @@ int main(void)
 		  HAL_ADC_PollForConversion(&hadc1, 1);
 		  adcRawResults[i] = HAL_ADC_GetValue(&hadc1);
 
-		  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], 0, 4096, 0, 180);
-		  PCA9685_SetServoAngle(i, servoAngles[i]);
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)){
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+		  }else{
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+		  }
+
+//		  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], 0, 4096, 0, 180);
+//		  PCA9685_SetServoAngle(i, servoAngles[i]);
 
 
 	  }
