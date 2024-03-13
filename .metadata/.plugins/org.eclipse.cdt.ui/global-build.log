@@ -312,3 +312,693 @@ Finished building: default.size.stdout
  
 Finished building: RobotArm_stm32.list
  
+10:34:25 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11972	     20	   1804	  13796	   35e4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+11:09:36 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  19892	     20	   1804	  21716	   54d4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+11:11:08 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:117:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  117 | Base.PotNum = 0;
+      |     ^
+../Core/Src/main.c:118:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  118 | Base.PotMin = 0;
+      |     ^
+../Core/Src/main.c:119:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  119 | Base.PotMax = 0;
+      |     ^
+../Core/Src/main.c:120:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  120 | Base.ServoNum = 0;
+      |     ^
+../Core/Src/main.c:121:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  121 | Base.ServoMin = 0;
+      |     ^
+../Core/Src/main.c:122:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  122 | Base.ServoMax = 0;
+      |     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:13:07 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:118:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  118 | Base.PotNum = 0;
+      |     ^
+../Core/Src/main.c:119:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  119 | Base.PotMin = 0;
+      |     ^
+../Core/Src/main.c:120:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  120 | Base.PotMax = 0;
+      |     ^
+../Core/Src/main.c:121:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  121 | Base.ServoNum = 0;
+      |     ^
+../Core/Src/main.c:122:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  122 | Base.ServoMin = 0;
+      |     ^
+../Core/Src/main.c:123:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  123 | Base.ServoMax = 0;
+      |     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:13:24 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:119:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  119 | Base.PotNum = 0;
+      |     ^
+../Core/Src/main.c:120:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  120 | Base.PotMin = 0;
+      |     ^
+../Core/Src/main.c:121:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  121 | Base.PotMax = 0;
+      |     ^
+../Core/Src/main.c:122:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  122 | Base.ServoNum = 0;
+      |     ^
+../Core/Src/main.c:123:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  123 | Base.ServoMin = 0;
+      |     ^
+../Core/Src/main.c:124:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  124 | Base.ServoMax = 0;
+      |     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+12:05:50 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:116:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '->' token
+  116 | Base->PotNum = 0;
+      |     ^~
+../Core/Src/main.c:117:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  117 | Base.PotMin = 0;
+      |     ^
+../Core/Src/main.c:118:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  118 | Base.PotMax = 0;
+      |     ^
+../Core/Src/main.c:119:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  119 | Base.ServoNum = 0;
+      |     ^
+../Core/Src/main.c:120:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  120 | Base.ServoMin = 0;
+      |     ^
+../Core/Src/main.c:121:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+  121 | Base.ServoMax = 0;
+      |     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+12:18:43 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20036	     20	   1804	  21860	   5564	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+12:19:04 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20036	     20	   1804	  21860	   5564	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+12:22:55 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:245:11: warning: implicit declaration of function 'Hal_Delay'; did you mean 'HAL_Delay'? [-Wimplicit-function-declaration]
+  245 |           Hal_Delay(5000);
+      |           ^~~~~~~~~
+      |           HAL_Delay
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: ./Core/Src/main.o: in function `main':
+/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Debug/../Core/Src/main.c:245: undefined reference to `Hal_Delay'
+/opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: /home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/Debug/../Core/Src/main.c:250: undefined reference to `Hal_Delay'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:64: RobotArm_stm32.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+12:23:22 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  19220	     20	   1796	  21036	   522c	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+12:23:26 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19220	     20	   1796	  21036	   522c	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+12:26:39 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  19164	     20	   1796	  20980	   51f4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+12:55:47 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20036	     20	   1804	  21860	   5564	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:01:08 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20116	     20	   1804	  21940	   55b4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:01:13 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20116	     20	   1804	  21940	   55b4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+13:03:02 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:215:20: warning: variable 'Gripper' set but not used [-Wunused-but-set-variable]
+  215 |   Gripper_Config_t Gripper;
+      |                    ^~~~~~~
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20060	     20	   1804	  21884	   557c	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:03:28 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20116	     20	   1804	  21940	   55b4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:07:06 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20116	     20	   1804	  21940	   55b4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:07:46 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+../Core/Src/main.c:183:18: warning: variable 'Base' set but not used [-Wunused-but-set-variable]
+  183 |   Joint_Config_t Base;
+      |                  ^~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20116	     20	   1804	  21940	   55b4	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:11:18 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:199:18: warning: variable 'Elbow' set but not used [-Wunused-but-set-variable]
+  199 |   Joint_Config_t Elbow;
+      |                  ^~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     20	   1804	  21964	   55cc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:18:11 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     20	   1804	  21964	   55cc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:23:30 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20140	     20	   1804	  21964	   55cc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:24:49 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20140	     20	   1804	  21964	   55cc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+13:31:11 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/pca9685.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/pca9685.d" -MT"Core/Src/pca9685.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/pca9685.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:32:41 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+13:33:53 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+13:42:30 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:44:34 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:46:35 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:47:14 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:18: warning: variable 'Wrist' set but not used [-Wunused-but-set-variable]
+  207 |   Joint_Config_t Wrist;
+      |                  ^~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+13:48:14 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20156	     20	   1804	  21980	   55dc	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+13:51:49 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:228:3: error: too few arguments to function 'PCA9685_SetServoAngle'
+  228 |   PCA9685_SetServoAngle(Wrist.ServoNum, 90);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/pca9685.h:86:16: note: declared here
+   86 | PCA9685_STATUS PCA9685_SetServoAngle(uint8_t Channel, float Angle, uint8_t Invert);
+      |                ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:52:10 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:228:3: error: too few arguments to function 'PCA9685_SetServoAngle'
+  228 |   PCA9685_SetServoAngle(Wrist.ServoNum, 90);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/pca9685.h:86:16: note: declared here
+   86 | PCA9685_STATUS PCA9685_SetServoAngle(uint8_t Channel, float Angle, uint8_t Invert);
+      |                ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:52:35 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:18: warning: variable 'Shoulder' set but not used [-Wunused-but-set-variable]
+  191 |   Joint_Config_t Shoulder;
+      |                  ^~~~~~~~
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20172	     20	   1804	  21996	   55ec	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 
+16:32:52 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-size   RobotArm_stm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20172	     20	   1804	  21996	   55ec	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+17:26:07 **** Incremental Build of configuration Debug for project RobotArm_stm32 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "RobotArm_stm32.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/wyatt/Desktop/RobotArm_stm32/RobotArm_stm32/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotArm_stm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RobotArm_stm32.elf
+ 
+arm-none-eabi-size   RobotArm_stm32.elf 
+arm-none-eabi-objdump -h -S  RobotArm_stm32.elf  > "RobotArm_stm32.list"
+   text	   data	    bss	    dec	    hex	filename
+  20436	     20	   1828	  22284	   570c	RobotArm_stm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: RobotArm_stm32.list
+ 

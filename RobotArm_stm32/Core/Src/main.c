@@ -26,19 +26,78 @@
 #include <string.h>
 #include "pca9685.h"
 #include "math.h"
+#include <stddef.h>
+#include <stdint.h>
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+typedef struct{
+	uint8_t  PotNum;
+	uint16_t PotMin;
+	uint16_t PotMax;
+	uint8_t  ServoNum;
+	uint16_t ServoMin;
+	uint16_t ServoMax;
+	uint16_t ServoHomeAngle;
+
+
+} Joint_Config_t;
+
+typedef struct{
+	GPIO_TypeDef* GPIOx;
+	uint16_t GPIO_Pin;
+	uint8_t  ServoNum;
+	uint16_t ServoMin;
+	uint16_t ServoMax;
+	uint16_t ServoHomeAngle;
+
+} Gripper_Config_t;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define POT_COUNT		4
-#define SERVO_COUNT		5
+// Potentiometer Macros
+#define POT_COUNT				4
+#define POT_BASE				0
+#define POT_SHOULDER			1
+#define POT_ELBOW				2
+#define POT_WRIST				3
+#define POT_BASE_MIN			0
+#define POT_BASE_MAX			4096
+#define POT_SHOULDER_MIN		0
+#define POT_SHOULDER_MAX		4096
+#define POT_ELBOW_MIN			0
+#define POT_ELBOW_MAX			4096
+#define POT_WRIST_MIN			0
+#define POT_WRIST_MAX			4096
+
+// Gripper Button Macros
+#define GRIPPER_OPEN			0
+#define GRIPPER_CLOSE			1
+#define GRIPPER_MIN				0
+#define GRIPPER_MAX				90
+
+// Servo Macros
+#define SERVO_COUNT				5
+#define SERVO_BASE				0
+#define SERVO_SHOULDER			1
+#define SERVO_ELBOW				2
+#define SERVO_WRIST				3
+#define SERVO_GRIPPER			4
+#define SERVO_BASE_MIN			0
+#define SERVO_BASE_MAX			180
+#define SERVO_SHOULDER_MIN		0
+#define SERVO_SHOULDER_MAX		180
+#define SERVO_ELBOW_MIN			0
+#define SERVO_ELBOW_MAX			180
+#define SERVO_WRIST_MIN			0
+#define SERVO_WRIST_MAX			180
+
 
 /* USER CODE END PD */
 
@@ -62,6 +121,11 @@ volatile uint8_t 	adcConversionComplete = 0; // flag used by callback
 
 uint8_t ActiveServo = 0;
 volatile float 	servoAngles [SERVO_COUNT];
+
+
+
+
+
 
 /* USER CODE END PV */
 
@@ -119,13 +183,58 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
-//
-//  PCA9685_Init(&hi2c1);
-//  PCA9685_SetServoAngle(0, 0);
-//  PCA9685_SetServoAngle(1, 0);
-//  PCA9685_SetServoAngle(2, 0);
-//  PCA9685_SetServoAngle(3, 0);
-//  PCA9685_SetServoAngle(4, 0);
+  Joint_Config_t Base;
+  Base.PotNum = 0;
+  Base.PotMin = 800;
+  Base.PotMax = 3400;
+  Base.ServoNum = 0;
+  Base.ServoMin = 0;
+  Base.ServoMax = 180;
+  Base.ServoHomeAngle = 90;
+
+  Joint_Config_t Shoulder;
+  Shoulder.PotNum = 1;
+  Shoulder.PotMin = 600;
+  Shoulder.PotMax = 3400;
+  Shoulder.ServoNum = 1;
+  Shoulder.ServoMin = 0;
+  Shoulder.ServoMax = 90;
+  Shoulder.ServoHomeAngle = 0;
+
+  Joint_Config_t Elbow;
+  Elbow.PotNum = 2;
+  Elbow.PotMin = 600;
+  Elbow.PotMax = 3400;
+  Elbow.ServoNum = 2;
+  Elbow.ServoMin = 50;
+  Elbow.ServoMax = 180;
+  Elbow.ServoHomeAngle = 180;
+
+  Joint_Config_t Wrist;
+  Wrist.PotNum = 3;
+  Wrist.PotMin = 600;
+  Wrist.PotMax = 3200;
+  Wrist.ServoNum = 3;
+  Wrist.ServoMin = 0;
+  Wrist.ServoMax = 180;
+  Wrist.ServoHomeAngle = 90;
+
+  Gripper_Config_t Gripper;
+  Gripper.GPIOx = GPIOA;
+  Gripper.GPIO_Pin = GPIO_PIN_9;
+  Gripper.ServoNum = 4;
+  Gripper.ServoMin = 0;
+  Gripper.ServoMax = 70;
+  Gripper.ServoHomeAngle = 0;
+
+
+
+  PCA9685_Init(&hi2c1);
+  PCA9685_SetServoAngle(Base.ServoNum, Base.ServoHomeAngle, 0);
+  PCA9685_SetServoAngle(Shoulder.ServoNum, Shoulder.ServoHomeAngle, 0);
+  PCA9685_SetServoAngle(Elbow.ServoNum, Elbow.ServoHomeAngle, 0);
+  PCA9685_SetServoAngle(Wrist.ServoNum, Wrist.ServoHomeAngle, 0);
+  PCA9685_SetServoAngle(Gripper.ServoNum, Gripper.ServoHomeAngle, 0);
 
   HAL_Delay(2000);
 
@@ -138,19 +247,39 @@ int main(void)
   while (1)
   {
 
+
+//	  PCA9685_SetServoAngle(Wrist.ServoNum, (float)Wrist.ServoMin, 0);
+//
+//	  HAL_Delay(5000);
+//
+//
+//	  PCA9685_SetServoAngle(Wrist.ServoNum, (float)Wrist.ServoMax, 0);
+//
+//	  HAL_Delay(5000);
+
+
+
 	  for(uint8_t i=0; i<adcChannelCount; i++){
 		  HAL_ADC_Start(&hadc1);
 		  HAL_ADC_PollForConversion(&hadc1, 1);
 		  adcRawResults[i] = HAL_ADC_GetValue(&hadc1);
+
+		  if(i == Base.ServoNum){
+			  if(adcRawResults[i] > Base.PotMax){
+				  adcRawResults[i] = Base.PotMax;
+			  }
+			  if(adcRawResults[i] < Base.PotMin){
+				  adcRawResults[i] = Base.PotMin;
+			  }
+			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Base.PotMin, (uint32_t)Base.PotMax, (uint32_t)Base.ServoMin, (uint32_t)Base.ServoMax);
+			  PCA9685_SetServoAngle(Base.ServoNum, servoAngles[i], 0);
+		  }
 
 		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)){
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 		  }else{
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 		  }
-
-//		  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], 0, 4096, 0, 180);
-//		  PCA9685_SetServoAngle(i, servoAngles[i]);
 
 
 	  }

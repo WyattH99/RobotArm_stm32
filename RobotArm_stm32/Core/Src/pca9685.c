@@ -157,7 +157,7 @@ PCA9685_STATUS PCA9685_SetPin(uint8_t Channel, uint16_t Value, uint8_t Invert)
 }
 
 #ifdef PCA9685_SERVO_MODE
-PCA9685_STATUS PCA9685_SetServoAngle(uint8_t Channel, float Angle)
+PCA9685_STATUS PCA9685_SetServoAngle(uint8_t Channel, float Angle, uint8_t Invert)
 {
 	float Value;
 	if(Angle < MIN_ANGLE) Angle = MIN_ANGLE;
@@ -165,7 +165,7 @@ PCA9685_STATUS PCA9685_SetServoAngle(uint8_t Channel, float Angle)
 
 	Value = (Angle - MIN_ANGLE) * ((float)SERVO_MAX - (float)SERVO_MIN) / (MAX_ANGLE - MIN_ANGLE) + (float)SERVO_MIN;
 
-	return PCA9685_SetPin(Channel, (uint16_t)Value, 0);
+	return PCA9685_SetPin(Channel, (uint16_t)Value, Invert);
 }
 #endif
 
