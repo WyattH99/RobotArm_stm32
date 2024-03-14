@@ -292,7 +292,9 @@ int main(void)
 			  if(adcRawResults[i] < Wrist.PotMin){
 				  adcRawResults[i] = Wrist.PotMin;
 			  }
-			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Wrist.PotMin, (uint32_t)Wrist.PotMax, (uint32_t)Wrist.ServoMin, (uint32_t)Wrist.ServoMax);
+			  servoAngles[i] = Wrist.PotMax - adcRawResults[i] + Wrist.PotMin; // Invert the Wrist Potentiometer Signals
+			  servoAngles[i] = (float)MAP((uint32_t)servoAngles[i], (uint32_t)Wrist.PotMin, (uint32_t)Wrist.PotMax, (uint32_t)Wrist.ServoMin, (uint32_t)Wrist.ServoMax);
+
 			  PCA9685_SetServoAngle(Wrist.ServoNum, servoAngles[i], 0);
 		  }
 
