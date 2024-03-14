@@ -1279,8 +1279,8 @@ int main(void)
   Shoulder.ServoMin = 0;
  8000f2c:	2300      	movs	r3, #0
  8000f2e:	873b      	strh	r3, [r7, #56]	; 0x38
-  Shoulder.ServoMax = 90;
- 8000f30:	235a      	movs	r3, #90	; 0x5a
+  Shoulder.ServoMax = 180;
+ 8000f30:	23b4      	movs	r3, #180	; 0xb4
  8000f32:	877b      	strh	r3, [r7, #58]	; 0x3a
   Shoulder.ServoHomeAngle = 0;
  8000f34:	2300      	movs	r3, #0
@@ -1673,7 +1673,7 @@ int main(void)
  8001286:	4a2f      	ldr	r2, [pc, #188]	; (8001344 <main+0x47c>)
  8001288:	f822 1013 	strh.w	r1, [r2, r3, lsl #1]
 			  }
-			  servoAngles[i] = Wrist.PotMax - adcRawResults[i] + Wrist.PotMin;
+			  servoAngles[i] = Wrist.PotMax - adcRawResults[i] + Wrist.PotMin; // Invert the Wrist Potentiometer Signals
  800128c:	8abb      	ldrh	r3, [r7, #20]
  800128e:	4619      	mov	r1, r3
  8001290:	f897 304f 	ldrb.w	r3, [r7, #79]	; 0x4f

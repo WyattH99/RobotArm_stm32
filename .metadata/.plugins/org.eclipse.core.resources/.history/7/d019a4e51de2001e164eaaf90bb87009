@@ -198,7 +198,7 @@ int main(void)
   Shoulder.PotMax = 3400;
   Shoulder.ServoNum = 1;
   Shoulder.ServoMin = 0;
-  Shoulder.ServoMax = 180;
+  Shoulder.ServoMax = 90;
   Shoulder.ServoHomeAngle = 0;
 
   Joint_Config_t Elbow;
