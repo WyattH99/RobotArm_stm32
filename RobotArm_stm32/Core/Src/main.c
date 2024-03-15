@@ -34,6 +34,7 @@ typedef struct{
 	uint8_t  PotNum;
 	uint16_t PotMin;
 	uint16_t PotMax;
+	uint8_t  PotInvertRange;
 	uint8_t  ServoNum;
 	uint16_t ServoMin;
 	uint16_t ServoMax;
@@ -84,9 +85,6 @@ UART_HandleTypeDef huart2;
 volatile uint16_t 	adcRawResults [POT_COUNT];
 const uint32_t 		adcChannelCount = sizeof(adcRawResults) / sizeof(adcRawResults[0]);
 
-uint8_t ActiveServo = 0;
-volatile float 	servoAngles [SERVO_COUNT];
-
 
 /* USER CODE END PV */
 
@@ -107,6 +105,23 @@ static void MX_I2C1_Init(void);
 uint32_t MAP(uint32_t au32_IN, uint32_t au32_INmin, uint32_t au32_INmax, uint32_t au32_OUTmin, uint32_t au32_OUTmax)
 {
     return ((((au32_IN - au32_INmin)*(au32_OUTmax - au32_OUTmin))/(au32_INmax - au32_INmin)) + au32_OUTmin);
+}
+
+
+void MoveServo(Joint_Config_t *Joint, uint32_t PotValue){
+	float MappedServoAngle;
+	if(PotValue > Joint->PotMax){
+		PotValue = Joint->PotMax;
+	}
+	if(PotValue < Joint->PotMin){
+		PotValue = Joint->PotMin;
+	}
+	// Invert the Wrist Potentiometer value
+	if(Joint->PotInvertRange){
+		PotValue = Joint->PotMax - PotValue + Joint->PotMin;
+	}
+	MappedServoAngle = (float)MAP(PotValue, Joint->PotMin, Joint->PotMax, Joint->ServoMin, Joint->ServoMax);
+	PCA9685_SetServoAngle(Joint->ServoNum, MappedServoAngle);
 }
 
 
@@ -150,6 +165,7 @@ int main(void)
   Base.PotNum = 0;
   Base.PotMin = 800;
   Base.PotMax = 3400;
+  Base.PotInvertRange = 0;
   Base.ServoNum = 0;
   Base.ServoMin = 0;
   Base.ServoMax = 180;
@@ -159,6 +175,7 @@ int main(void)
   Shoulder.PotNum = 1;
   Shoulder.PotMin = 600;
   Shoulder.PotMax = 3400;
+  Shoulder.PotInvertRange = 0;
   Shoulder.ServoNum = 1;
   Shoulder.ServoMin = 0;
   Shoulder.ServoMax = 180;
@@ -168,6 +185,7 @@ int main(void)
   Elbow.PotNum = 2;
   Elbow.PotMin = 600;
   Elbow.PotMax = 3400;
+  Elbow.PotInvertRange = 0;
   Elbow.ServoNum = 2;
   Elbow.ServoMin = 50;
   Elbow.ServoMax = 180;
@@ -177,6 +195,7 @@ int main(void)
   Wrist.PotNum = 3;
   Wrist.PotMin = 600;
   Wrist.PotMax = 3200;
+  Wrist.PotInvertRange = 1;
   Wrist.ServoNum = 3;
   Wrist.ServoMin = 0;
   Wrist.ServoMax = 180;
@@ -210,55 +229,29 @@ int main(void)
   while (1)
   {
 
+	  // Super Loop Style
 	  for(uint8_t i=0; i<adcChannelCount; i++){
+
+		  // Read the Potentiometers
 		  HAL_ADC_Start(&hadc1);
 		  HAL_ADC_PollForConversion(&hadc1, 1);
 		  adcRawResults[i] = HAL_ADC_GetValue(&hadc1);
 
+		  // Move each of the Servos According to the Potentiometer Readings
 		  if(i == Base.ServoNum){
-			  if(adcRawResults[i] > Base.PotMax){
-				  adcRawResults[i] = Base.PotMax;
-			  }
-			  if(adcRawResults[i] < Base.PotMin){
-				  adcRawResults[i] = Base.PotMin;
-			  }
-			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Base.PotMin, (uint32_t)Base.PotMax, (uint32_t)Base.ServoMin, (uint32_t)Base.ServoMax);
-			  PCA9685_SetServoAngle(Base.ServoNum, servoAngles[i]);
+			  MoveServo(&Base, (uint32_t)adcRawResults[i]);
 		  }
 
 		  if(i == Shoulder.ServoNum){
-			  if(adcRawResults[i] > Shoulder.PotMax){
-				  adcRawResults[i] = Shoulder.PotMax;
-			  }
-			  if(adcRawResults[i] < Shoulder.PotMin){
-				  adcRawResults[i] = Shoulder.PotMin;
-			  }
-			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Shoulder.PotMin, (uint32_t)Shoulder.PotMax, (uint32_t)Shoulder.ServoMin, (uint32_t)Shoulder.ServoMax);
-			  PCA9685_SetServoAngle(Shoulder.ServoNum, servoAngles[i]);
+			  MoveServo(&Shoulder, (uint32_t)adcRawResults[i]);
 		  }
 
 		  if(i == Elbow.ServoNum){
-			  if(adcRawResults[i] > Elbow.PotMax){
-				  adcRawResults[i] = Elbow.PotMax;
-			  }
-			  if(adcRawResults[i] < Elbow.PotMin){
-				  adcRawResults[i] = Elbow.PotMin;
-			  }
-			  servoAngles[i] = (float)MAP((uint32_t)adcRawResults[i], (uint32_t)Elbow.PotMin, (uint32_t)Elbow.PotMax, (uint32_t)Elbow.ServoMin, (uint32_t)Elbow.ServoMax);
-			  PCA9685_SetServoAngle(Elbow.ServoNum, servoAngles[i]);
+			  MoveServo(&Elbow, (uint32_t)adcRawResults[i]);
 		  }
 
 		  if(i == Wrist.ServoNum){
-			  if(adcRawResults[i] > Wrist.PotMax){
-				  adcRawResults[i] = Wrist.PotMax;
-			  }
-			  if(adcRawResults[i] < Wrist.PotMin){
-				  adcRawResults[i] = Wrist.PotMin;
-			  }
-			  servoAngles[i] = Wrist.PotMax - adcRawResults[i] + Wrist.PotMin; // Invert the Wrist Potentiometer Signals
-			  servoAngles[i] = (float)MAP((uint32_t)servoAngles[i], (uint32_t)Wrist.PotMin, (uint32_t)Wrist.PotMax, (uint32_t)Wrist.ServoMin, (uint32_t)Wrist.ServoMax);
-
-			  PCA9685_SetServoAngle(Wrist.ServoNum, servoAngles[i]);
+			  MoveServo(&Wrist, (uint32_t)adcRawResults[i]);
 		  }
 
 		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)){
